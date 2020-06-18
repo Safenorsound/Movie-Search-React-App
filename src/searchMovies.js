@@ -1,8 +1,12 @@
 import React from 'react';
 
+export default function SearchMovies() 
+// States: input query and movie search
+
+const [query, setQuery] = useQuery('');
+
 const searchMovies = async (e) => {
   e.preventDefault();
-  console.log('submitting');
 
   const query = 'Jurassic Park';
 
@@ -18,7 +22,6 @@ const searchMovies = async (e) => {
   }
 };
 
-export default function SearchMovies() {
   return (
     <form className="form" onSubmit={searchMovies}>
       <label className="label" htmlFor="query">
@@ -29,10 +32,12 @@ export default function SearchMovies() {
         type="text"
         name="query"
         placeholder="Enter movie"
+        value={query}
+        onchange={(e) => setQuery(e.target.value)}
       />
       <button className="button" type="submit">
         Search
       </button>
     </form>
   );
-}
+
