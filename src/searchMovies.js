@@ -16,6 +16,7 @@ export default function SearchMovies() {
     try {
       const res = await fetch(url);
       const data = await res.json();
+      setMovies(data.results);
       console.log(data);
     } catch (err) {
       console.log(err);
