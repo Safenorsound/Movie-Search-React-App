@@ -1,4 +1,4 @@
-import React {useState} from 'react';
+import React, { useState } from 'react';
 
 export default function SearchMovies() {
   // States: input query and movie search
@@ -34,7 +34,8 @@ return (
       type="text"
       name="query"
       placeholder="Enter movie"
-      value={query} onChange={(e) => setQuery(e.target.value)}
+      value={query}
+      onChange={(e) => setQuery(e.target.value)}
       onchange={(e) => setQuery(e.target.value)}
     />
     <button className="button" type="submit">
