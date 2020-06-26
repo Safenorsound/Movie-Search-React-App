@@ -34,7 +34,7 @@ return (
       type="text"
       name="query"
       placeholder="Enter movie"
-      value={query}
+      value={query} onChange={(e) => setQuery(e.target.value)}
       onchange={(e) => setQuery(e.target.value)}
     />
     <button className="button" type="submit">
