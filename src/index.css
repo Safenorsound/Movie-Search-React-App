@@ -78,6 +78,16 @@ small {
   background-color: white;
 }
 
+.card--title {
+  margin-bottom: 0.5rem;
+  font-size: 3.2rem;
+}
+
+.card--image {
+  margin: 0 auto;
+  display: block;
+}
+
 @media (min-width: 786px) {
   .form {
     grid-template-columns: auto 1fr auto; /* This takes up a fraction of the available space */
