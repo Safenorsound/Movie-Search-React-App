@@ -1,4 +1,6 @@
-A React App utilizing a fetch request for a movie API. 
+A React App/Component utilizing a fetch request for a movie API. 
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
